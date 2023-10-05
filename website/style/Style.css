@@ -1,7 +1,7 @@
 
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Tokumin&display=swap');
 
 
 * {
@@ -16,6 +16,10 @@ p {
 
 a{
     color: black;
+}
+
+ul {
+    list-style-type: none;
 }
 
 header {
@@ -34,6 +38,8 @@ header h1{
     flex-direction: column;
     justify-content: center;
     padding: 0% 0% 0% 1%;
+    font-family: 'Kaisei Tokumin', serif;
+    ;
 
 }
 
@@ -51,6 +57,10 @@ main {
 main a {
     text-decoration: none;
     
+}
+
+main a:hover{
+    text-decoration: underline;
 }
 
 footer {
@@ -73,7 +83,6 @@ h2, h3{
 
 nav ul {
     display:flex;
-    justify-content:flex-end;
     list-style-type: none;
     flex-wrap: wrap;
     padding: 1.5em;
@@ -108,9 +117,10 @@ section iframe{
     width: 100%;
     margin-bottom: 2%;
     height: 460px;
+    border: none;
 }
 
-main ul {
+.spotify ul {
     display: flex;
     justify-content: center;
     max-width: 80%;
@@ -119,20 +129,20 @@ main ul {
     list-style-type: none; 
 }
 
-main ul li {
+.spotify ul li {
     display: flex;
     justify-content: center;
     width: 38%;
 }
 
-main li iframe {
+.spotify li iframe {
     margin: 1.5%; 
 }
 
-main a[href="Pagina_1.html"],
-main a[href="Pagina_2.html"],
-main a[href="Pagina_3.html"],
-main a[href="Pagina_4.html"] {
+main a[href="pagina_1.html"],
+main a[href="pagina_2.html"],
+main a[href="pagina_3.html"],
+main a[href="pagina_4.html"] {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -146,9 +156,13 @@ main a[href="Pagina_4.html"] {
 }
 
 
-main a:hover {
+main a[href="pagina_1.html"]:hover,
+main a[href="pagina_2.html"]:hover,
+main a[href="pagina_3.html"]:hover,
+main a[href="pagina_4.html"]:hover {
     box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, .4);
     transform: scale(1.03);
+    text-decoration: none;
 }
 
 a h3 {
@@ -166,3 +180,8 @@ main a p {
     
 }
 
+ul iframe {
+    width: 100%;
+    border: none;
+
+}
